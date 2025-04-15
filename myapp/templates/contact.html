@@ -1,0 +1,223 @@
+
+
+{% extends 'base.html'%}
+{% load static %}
+{% block content%}
+
+<div class="col-lg-12 foot">
+    <div class="text-white">
+        <h1>Juice- Hair And Beauty Salon Franchise</h1>
+        <p>India First Customizable Salon Opportunities starts @50 lakhs</p>
+    </div>
+    </div>
+    <!-- row endd -->
+  <div class="container">
+    <div class="row mt-5">
+        <div class="col-6">
+            <h2 id="foodi">Ever felt too restricted?</h2>
+            <p>Or that your vision is very different from reality? <br/>
+                Are you looking at partnering with a brand but don’t want to lose your individuality? <br/>
+                Do want a system that works but is not too traditional to reject your new ideas? <br/>
+                Do you want your salon to reflect your personality not just copy paste of a salon from another city? <br/>
+
+            </p>
+
+        </div>
+        <div class="col-6 form-container1 mx-auto">
+
+    <form action="/insertcontact" method="post">
+        {% csrf_token %}
+        <div class="mb-3">
+            <label class="form-label"> Full Name</label>
+            <input type="text"  class="form-control" placeholder="Enter  your full Name" required name="name"/>
+        </div>
+        <div>
+            <label class="form-label">Email</label>
+            <input type="Email"  class="form-control" placeholder="Enter  your full Name" name="email" required/>
+        </div>
+        <div class="mb-1">
+            <label class="form-label">Phone Number</label>
+            <input type="tel"   class="form-control" placeholder="Enter  your full Name" required name="phonenumber"/>
+        </div>
+        <div class="mb-1  ">
+            <label class="form-label">Franchise Type</label>
+            <!-- <input type="select"   class="form-control" placeholder="Select the franchise Type" required/> -->
+            <select class="select-form form-control" name="FranchiseType" >
+                <option>Select franchise type</option>
+                <option> Juice Academy</option>
+                <option> Juice Salon</option>
+                <option>Juice Bar</option>
+            </select>
+           </div>
+           <div class="mb-3">
+            <label class="form-label">City Interested</label>
+            <input type="text"  class="form-control" placeholder="Enter the city name" name="Cityinterested" required/>
+        </div>
+      <div class="p-1">
+            <button type="submit" class="text-center">Submit Inquiry</button>
+    </div>
+    </form>
+</div>
+</div>
+</div>
+<div class=" row ">
+    <div class="col-lg-3 p-5">
+        <img src="{% static 'image/f1.jpg'%}" width="100%" height="450">
+    </div>
+    <div class="col-9">
+        <h1 class="mix">Why Juice Salon Franchise?</h1>
+        <p class="p-1">
+            JUICE has been the salon of choice, providing an array of services suitable for everyone. We’ve been growing strong and bringing style and beauty back to the unique salon experience.<br/>
+            
+            Juice Salon aims to create a unique position in the salon industry, and become a brand known for exceptional beauty and skill while taking indigenous efforts in understanding every client’s needs.<br/>
+            <ul>
+            <li>23 years of Industry Experience<br/><br/></li>
+            
+            <li> Winner of Several Awards in the Industry<br/><br/></li>
+            
+            <li>Reduced Cost of Investment & Higher ROI<br/><br/></li>
+            
+            <li> Strategic Alliances with International brands<br/><br/></li>
+            
+            <li>Organized /Sector Growth – 30% Annually</li>
+            </ul>
+            Juice is the first Indian originated brand that has been showcased abroad as a vision of revolutionising the experiential beauty services and is now among the top names in the beauty industry.</p>
+
+    </div>
+
+</div>
+<div class="row">
+    <div class="col-lg-12">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d109744.22709340515!2d76.68831206468504!3d30.732254422013504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fed0be66ec96b%3A0xa5ff67f9527319fe!2sChandigarh!5e0!3m2!1sen!2sin!4v1739852943270!5m2!1sen!2sin"
+         width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </div>
+</div>
+<div class="row poll">
+    <div class="col-lg-12">
+        <iframe width="100%" height="415" src="https://www.youtube.com/embed/FDORzfKYngA?si=JxvZHjrgS2ctl6hg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        
+
+    </div>
+</div>
+<div class="row paddii">
+    <div class="col-lg-3">
+        <h3>35+</h3>
+        <p>Salon in India</p>
+    </div>
+    <div class="col-lg-3">
+        <h3>8+</h3>
+        <p>Salon in Dubai</p>
+    </div>
+    <div class="col-lg-3">
+        <h3>3X</h3>
+        <p>Return on investment</p>
+    </div>
+    <div class="col-lg-3">
+        <h3>50,000+</h3>
+        <p>Customers</p>
+    </div>
+
+</div>
+<!-- row end -->
+ <div class="row style3">
+    <div class="col-lg-12">
+        <h1>Choose your Franchise Model</h1>
+
+    </div>
+
+ </div>
+ <!-- row end -->
+  <div class="row ">
+    <div class="col-lg-6">
+        <img src="{% static 'image/Choose3.jpg'%}" width="100%" height="350px" >
+    </div>
+    <div class=" cod col-lg-6">
+        <p>You can choose the Franchise model & pick services depending on your sq. ft area, city, market needs, population you’re catering to, your vision of your dream salon. It can be a Beauty and nails salon with eyelashes put into the mix. It can be a traditional salon along cosmetology and Microblading. It can have Hair, beauty, nails with a makeup room every bride would love to dress up in. It can have huge spa rooms along with your beauty, nails and hair services. It can have a clinic with Derma and Cosmetology but still be a still be the perfect beauty destination.</p>
+
+    </div>
+  </div>
+  <!-- row end -->
+   <div class="  maindrew row">
+    <div class="browser col-lg-6">
+        <h2>Unisex Nail Bar Salon</h2>
+        <p>Under 15 Lakhs based on your city*</p>
+
+    </div>
+    
+    <div class=" browser col-lg-6" >
+        <h2>Juice Salon & Academy</h2>
+        <p>Approx 50 Lakhs based on your city*</p>
+
+    </div>
+
+   </div>
+   <!-- row end -->
+    <div class=" star4 row">
+        <div class="col-lg-12">
+            <h1>Cities we are in</h1>
+
+        </div>
+    </div>
+    <!-- row end -->
+     <div class="row">
+        <div class="col-lg-2">
+            <img src="{% static 'image/mumbai franchise-01.jpg'%}" width="100%">
+
+        </div>
+        <div class="col-lg-2">
+            <img src="{% static 'image/Hyderabad franchise-01.jpg'%}" width="100%">
+
+        </div>
+        <div class="col-lg-2">
+            <img src="{% static 'image/Kolkata franchise-01.jpg'%}" width="100%">
+
+        </div>
+        <div class="col-lg-2">
+            <img src="{% static 'image/lucknow franchise-01.jpg'%}" width="100%">
+
+        </div>
+        <div class="col-lg-2">
+            <img src="{% static 'image/Pryagaraj franchise-01.jpg'%}" width="100%">
+
+        </div>
+        <div class="col-lg-2">
+            <img src="{% static 'image/Varanasi franchise-01.jpg'%}" width="100%">
+
+        </div>
+        
+
+     </div>
+     <!-- row end -->
+      <div class="row meel">
+            <div class="col-lg-2">
+                <img src="{% static 'image/Kolhapur franchise-01.jpg'%}" width="100%">
+    
+            </div>
+            <div class="col-lg-2">
+                <img src="{% static 'image/Vijaywada franchise-01.jpg'%}" width="100%">
+            </div>
+            <div class="col-lg-2">
+                <img src="{% static 'image/pune franchise-01.jpg'%}" width="100%">
+            </div>
+            <div class="col-lg-2">
+                <img src="{% static 'image/trivandrum franchise-01.jpg'%}" width="100%">
+            </div>
+            <div class="col-lg-2">
+                <img src="{% static 'image/indore franchise-01.jpg'%}" width="100%">
+            </div>
+            
+
+
+        </div>
+       
+
+      
+
+
+
+
+
+
+
+{% endblock %}

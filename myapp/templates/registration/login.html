@@ -1,0 +1,28 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block content %}
+
+
+<div class="row">
+    <div class="col-lg-12 main1">
+<h1 class="pt-5 maker1">Login</h1>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Register</button>
+
+</form>
+</div>
+</div>
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,132 @@
+<!-- {% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myproject</title>
+</head>
+<body>
+    <h1>
+        Website design
+    </h1>
+    <p>
+        this is my website design. this is my website design. this is my website design. this is my website design.
+    </p>
+    <ol type=""I>
+        <li>Html</li>
+        <li>Css</li>
+        <li>Javascripy</li>
+
+    </ol>
+    <ul type="square">
+        <li>Html</li>
+        <li>Html</li>
+        <li>Html</li>
+
+    </ul>
+    <table border="1" width="50%">
+        <thead>
+            <tr>
+                <th>name</th>
+                <th>course</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    aman
+                </td>
+                <td>python</td>
+            </tr>
+        </tbody>
+    </table>
+    <img src="{% static 'image/m1.png' %}" height="300" width="400"/>
+    <a href="#">click here</a>
+    <a href="https://www.figma.com/web-design/" target="_blank">link</a>
+    <a href="/about">about</a>
+
+    
+</body>
+</html> -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collage Registration Form</title>
+    <link href="{% static 'style.css'%}" rel="stylesheet"/>
+</head>
+<body>
+    <form id=>
+        <div>
+            <label>
+                Student Name
+            </label>
+            <input type="text" placeholder="Enter name" required/>
+        </div>
+        <div>
+            <label>
+                Father name
+            </label>
+            <input type="text" placeholder="enter name" required/>
+        </div>
+        <div>
+            <label>Email</label>
+            <input type="Email" required/>
+        </div>
+        <div>
+            <label>Contact</label>
+            <input type="tel"/>
+        </div>
+        <div>
+            <label>Age</label>
+            <input type="number">
+        </div>
+        <div>
+            <label>Date Of Birth</label>
+            <input type="date">
+
+        </div>
+        <div>
+            <label>Documents</label>
+            <input type="file"/>
+        </div>
+        <div>
+            <label>Address</label>
+            <textarea rows="3"></textarea>
+        </div>
+        <!-- <div>
+            <label>time</label>
+            <input type="time"/>
+        </div> -->
+        <div>
+            <label> Gender</label>
+            Male<input type="radio" name="Gender"/>
+            feMale<input type="radio" name="Gender"/>
+            other<input type="radio" name="Gender"/>
+        </div>
+        <div>
+            <label>course</label>
+            <select>
+                <option>computer</option>
+                <option>electrical</option>
+                <option>OMCA</option>
+                <option>DMLT</option>
+                <option>architecture</option>
+            </select>
+            
+        </div>
+        <div>
+            <input type="checkbox"/>
+            <label>I accept</label>
+        </div>
+        <div>
+            <input type="submit"/>
+            <button type="Reset">Reset</button>
+        </div>
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<div class="container">
+    <div class="designs5  maker1 col-lg-12">
+    <h1>Delete Your Appointment</h1>
+    <h5 class="pt-2">We’re sorry to see you go. Please let us know why you’re canceling:</h5>
+    <form class="pt-3" action="/cancelappointment/{{id }}" method="POST">
+       {% csrf_token %}
+        <label for="reason">Select a reason:</label>
+        <select id="reason" name="reason" required>
+            <option value="schedule_change">Schedule Conflict</option>
+            <option value="found_another">Found Another Salon</option>
+            <option value="too_expensive">Too Expensive</option>
+            <option value="not_satisfied">Not Satisfied with Service</option>
+            <option value="personal_reason">Personal Reason</option>
+        </select>
+        <button type="submit">Cancel Appointment</button>
+    </form>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}

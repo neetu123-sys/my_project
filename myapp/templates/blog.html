@@ -1,0 +1,46 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block content%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog posts</title>
+</head>
+<body>
+    <div class="row design9">
+        <div class="col-lg-12">
+            <h1>Blogs</h1>
+
+        </div>
+    </div>
+    <!-- row end -->
+     <div class="row pt-5 maker1">
+        
+            {% for blog in b %}
+            <div class="col-lg-4 pt-5">
+                <img src="/media/{{ blog.photo}}" class="d-block" alt="....." height="350px" width="100%">
+                <p class="design8"> Beauty Salon  | 
+                    
+                    <!-- |    {{blog.created_at}} -->
+                </p> 
+                <h3>{{ blog.title }}</h3>
+                <p class="maker2"> {{ blog.content |striptags| slice:200 }}</p>
+                <p><strong>Published on:</strong> {{ post.created_at|date:"F j, Y, g:i a" }}</p>
+                <a href="/blogdetails/{{blog.id}}"> Read more</a>
+            </div>
+        
+
+
+    {% endfor %}
+</div>
+    
+   
+    
+</body>
+</html>
+
+
+
+{% endblock %}

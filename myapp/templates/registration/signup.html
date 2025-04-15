@@ -1,0 +1,33 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block content%}
+
+<div class="row">
+
+
+<div class="col-lg-6 design5 maker1 pt-4">
+    <h1>Sign Up</h1>
+    <form method="POST" >
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit pt-5">Register</button>
+    </form>
+    </div>
+    <div class="col-lg-6">
+        <img src="{% static 'image/gif.gif'%}" class="d-block w-100" alt="..." height="490px">
+    
+    </div>
+</div>
+
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
